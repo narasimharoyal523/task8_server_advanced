@@ -22,10 +22,6 @@
 
 task8_server_advanced/ ├── views/ │ └── home.ejs ├── jobs/ │ └── emailJob.js ├── server.js ├── worker.js ├── package.json ├── .env
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🔧 Features
@@ -46,18 +42,12 @@ Edit
 2. Install packages:
    ```bash
    npm install
-Run the app:
-
-bash
-Copy
-Edit
-node server.js
-In another terminal, run the worker:
-
-bash
-Copy
-Edit
-node worker.js
+3. Run the app:
+   ```bash
+   node server.js
+4. In another terminal, run the worker:
+   ```bash
+   node worker.js
 💻 App URLs
 GET / → Cached time view
 
@@ -69,4 +59,3 @@ Load / once → cache stores time
 Wait 10 sec and reload → updated time
 
 Submit email form → email job is processed by worker.js
-
